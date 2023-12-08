@@ -1,0 +1,619 @@
+
+body,html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+  z-index: 3;
+}
+ /* Logo */
+
+
+.logo{
+    position: absolute;
+    top: -25px;
+}
+.logo img{
+    width: 175px;
+}
+h2{
+
+    font-family: 'Piedra', cursive;
+    font-size: 45px;
+    padding-top: 10px;
+}
+p{
+    font-family: 'Shrikhand', cursive;   
+}
+
+
+/* Barre de Navigation */
+a{
+    text-decoration: none!important;
+    color: black !important ;
+    font-family: 'Shrikhand', cursive;
+    font-size: 18px; 
+    font-weight: bold;  
+}
+ nav{
+    width: 100%;
+    background-color: #bebebe;
+    position: sticky;
+    top: 0px;
+    z-index: 4;
+}
+nav > ul{
+    margin: 0px;
+    margin-bottom: 35px;
+    padding: 0px;
+}
+nav li{
+    list-style-type: none;
+}
+nav > ul > li{
+    float: right;
+    position :relative;
+    
+}
+nav > ul::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+nav label{
+    display: none;
+}
+nav a{
+    display: inline-block;
+    text-decoration:none;
+    font-family: cursive; 
+}
+nav > ul > li > a{
+    padding: 20px 30px;
+    color :#fff;
+} 
+nav > ul > li:hover a{
+padding: 15px 30px 20px 30px;
+}
+.nav-bar1{
+    display: none;
+}
+
+/* menu 2 */
+
+
+.active{
+    background:linear-gradient(45deg,#a018a5,#7cff1083);
+    color: #f1f1f1;
+}
+.grandmur:hover{
+border-top: 5px solid #e44d26;
+background-color: rgba(228, 77, 38, 0.15);
+}
+.petitmur:hover{
+border-top: 5px solid #0070bb;
+background-color: rgba(000, 112, 192, 0.15); 
+}
+.toile:hover{
+border-top: 5px solid #479181;
+background-color: rgba(86, 177,  138, 0.15);
+}
+.presentation:hover{
+border-top: 5px solid rgb(166, 103, 187);
+background-color: rgba(166, 103, 187, 0.15); 
+}
+.boutique:hover{
+border-top: 5px solid rgb(99, 38, 240);
+background-color: rgba(99, 38, 240, 0.15);
+}
+.contact:hover{
+border-top: 5px solid rgb(240, 102, 38);
+background-color: rgba(240, 102, 38, 0.15);
+}
+
+/* Fin de la Barre de Navigation */
+
+
+a:active{
+    color: blue;
+}
+
+/* section logo responsive */
+.logo-resp{
+   display: none;   
+}
+/* fin de la section logo responsive */
+
+
+/* Button contact Responsive */
+
+.contact-resp{
+    border-top: 10px  #827a97;
+    border-style: groove;
+  position: relative;
+    display: none;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 10px 0;
+    background-color:#827a97;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.contact-resp:hover{
+    display: none;
+    background: linear-gradient(45deg,#fe0061,#ffeb3b);
+}
+
+/* fin de la section Button contact Responsive */
+
+
+/* Couleur de fond des images */
+
+.contour-image{
+    padding: 5px;
+    margin-bottom: 25px;
+    background-color: rgba(50, 42, 53, 0.856);
+}
+
+.container-index{
+    border: 1px solid black;
+    margin-bottom: 25px;
+    background-color: burlywood;
+}
+/* Fin Couleur de fond des images */
+
+
+/* Onglet Accueil */
+
+.title1{
+    text-align: center;
+    padding-top: 7px;
+    font-family: 'Handlee', cursive;
+    color: rgb(83, 172, 175);
+}
+/* Fin de l'onglet Accueil */
+
+
+/* Onglet Grand mur */
+.grand-mur article{
+    text-align: center;
+}
+/* Fin de l'onglet Grand mur */
+
+
+/* Onglet Presentation / About */
+
+.title-pres{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Handlee', cursive;
+    color: rgb(83, 172, 175);
+}
+.tof{
+    margin: 20px 0 40px 0px;
+}
+.img-pres{
+    border-radius: 20px;
+    background-color: #FAEFD7;
+    box-shadow: 10px 10px 5px 5px #8D8A9E;
+    margin-bottom: 50px;
+}
+
+.separator{
+    color: black;
+    font-weight: bold;
+    border: rgb(196, 172, 172) solid 1px;
+    width: 80%;
+}
+.text-pres{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Fin de l'Onglet Presentation / About */
+
+
+/* Onglet formulaire de contact*/
+
+form > div {
+    clear: both;
+    overflow: hidden;
+    padding: 1px;
+    margin: 0 0 10px 0;
+  }
+  form > div > label,
+  legend {
+      width: 25%;
+    float: left;
+    padding-right: 10px;
+  }
+  form > div > div,
+  form > div > fieldset > div {
+    width: 75%;
+    float: right;
+  }
+  form > div > fieldset label {
+      font-size: 90%;
+  }
+  fieldset {
+      border: 0;
+    padding: 0;
+  }
+  
+  input[type=text],
+  input[type=email],
+  input[type=url],
+  input[type=password],
+  textarea {
+      width: 60%;
+    border-top: 2px solid #ccc;
+    border-left: 3px solid #ccc;
+    border-right: 3px solid #eee;
+    border-bottom: 4px solid #eee;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=url],
+  input[type=password] {
+    width: 50%;
+  }
+  input[type=text]:focus,
+  input[type=email]:focus,
+  input[type=url]:focus,
+  input[type=password]:focus,
+  textarea:focus {
+    outline: 0;
+    border-color: #4697e4;
+  }
+
+/*fin de l'Onglet formulaire de contact*/
+
+
+
+/* Onglet footer */
+
+footer{ 
+    padding: 0 15px;
+    color: #fff;
+    background-color: #011c39;   
+}  
+.container-footer{
+position: relative;
+text-align: right;
+
+   }
+
+   .footer-text{
+       margin-bottom: 0;
+       padding-bottom: 10px;
+   }
+
+/* Fin de l'onglet footer */
+
+
+
+/* Média query */
+
+@media (max-width: 1576px){
+    .logo img{
+        display: none;
+      }
+}
+
+@media (min-width: 1200px) {
+    form > div > label,
+      legend {
+        text-align: right;
+    }
+  }
+
+@media (max-width: 1056px){
+
+.title1{
+display: inline-block;
+/* margin-left: 75px; */
+    }
+    nav{
+        text-align: center;
+   }  
+}
+
+
+  @media screen and (max-width: 780px) {
+    
+    .title1{
+    display: none;
+    }
+#menu-bar{
+    display: initial;
+}
+.logo-resp{
+    border-radius: 30px;
+    position: relative;
+    display: initial;
+    margin-left: 30%;
+    text-align: center;
+   
+    padding: 80px 30px;
+    
+  }
+}
+
+@media screen and (max-width: 720px){
+
+    nav > ul > li > a{
+        padding: 10px 20px;
+        
+    } 
+    nav > ul > li:hover a{
+        padding: 7px 20px 7px 20px;
+        }
+}
+@media screen and (max-width: 612px){
+    nav > ul > li > a{
+        padding: 5px 15px;
+        color :#fff;
+    } 
+    nav > ul > li:hover a{
+        padding: 0px 15px 5px 15px;
+        }
+}
+
+  @media (max-width: 600px) {
+    form > div {
+      margin: 0 0 15px 0; 
+    }
+    form > div > label,
+    legend {
+        width: 100%;
+      float: none;
+      margin: 0 0 5px 0;
+    }
+    form > div > div,
+    form > div > fieldset > div {
+      width: 100%;
+      float: none;
+    }
+    input[type=text],
+    input[type=email],
+    input[type=url],
+    input[type=password],
+    textarea,
+    select {
+      width: 100%; 
+    }
+  }
+  
+@media screen and (max-width: 587px){
+
+    #menu-bar{
+        display: none;
+    }
+
+    .nav-bar{
+        display: none;
+
+    }
+    .nav-bar1{
+        display: initial;
+    }
+    nav ul li{
+        display: block;
+        width: 100%;
+        text-align: center;
+     
+    }
+    .contact{
+        display: initial;
+    }
+    .logo img{
+        display: none;  
+    }
+    
+    nav{
+        position: relative;
+    }
+    li{
+        display: none;
+        background: linear-gradient(45deg,#fe0061,#ffeb3b);
+      color: black;
+      padding: -5px 0px;
+      position: sticky;
+      top: 0;
+      left: 0;
+      margin: 3px 0;
+    }
+    .logo-resp{
+        position: relative;
+        display: initial;
+      margin-left: 30%;
+        text-align: center;
+        padding: 70px 20px;
+        margin: 110px;
+        
+    }
+    nav > ul > li > a{
+        padding: 5px 15px;
+        color: white;
+    } 
+    nav > ul > li:hover a{
+        padding: 0px 235px 5px 235px;
+        }
+}
+
+@media screen and (max-width: 559px){
+    .logo-resp{
+        position: relative;
+        display: initial;
+      margin-left: 30%;
+        text-align: center;
+        padding: 70px 10px;
+        margin: 100px;
+        
+    } 
+    nav > ul > li > a{
+        padding: 5px 15px;
+        color :#fff;
+    } 
+    nav > ul > li:hover a{
+        padding: 0px 185px 5px 185px;
+        }
+
+}
+
+@media screen and (max-width: 505px){
+    .logo-resp{
+        position: relative;
+        display: initial;
+      margin-left: 30%;
+        text-align: center;
+        padding: 70px 10px;
+        margin: 100px;
+      
+        
+    } 
+    nav > ul > li > a{
+        padding: 5px 15px;
+        color :#fff;
+    } 
+    nav > ul > li:hover a{
+        padding: 0px 185px 5px 185px;
+        }
+
+}
+
+@media screen and (max-width: 467px){
+   
+        .logo-resp{
+            position: relative;
+            display: initial;
+          margin-left: 30%;
+            text-align: center;
+            padding: 70px 10px;
+            margin: 80px;
+          
+            
+        } 
+        nav > ul > li > a{
+            padding: 5px 15px;
+            color :#fff;
+        } 
+        nav > ul > li:hover a{
+            padding: 0px 185px 5px 185px;
+            }
+}
+@media screen and (max-width: 427px)
+{
+    .logo-resp{
+        position: relative;
+        display: initial;
+      margin-left: 30%;
+        text-align: center;
+        padding: 60px 10px;
+        margin: 60px;
+      
+        
+    } 
+    nav > ul > li > a{
+        padding: 5px 15px;
+        color :#fff;
+    } 
+    nav > ul > li:hover a{
+        padding: 0px 115px 0px 115px;
+        } 
+}
+@media screen and (max-width: 385px){
+    .logo-resp{
+        position: relative;
+        display: initial;
+      margin-left: 30%;
+        text-align: center;
+        padding: 60px 10px;
+        margin: 40px;
+       
+    } 
+    nav > ul > li > a{
+        padding: 5px 15px;
+    
+    } 
+    nav > ul > li:hover a{
+        padding: 0px 85px 0px 85px;
+        
+        }  
+}
+@media screen and (max-width: 348px){
+    .logo-resp{
+        position: relative;
+        display: initial;
+      margin-left: 30%;
+        text-align: center;
+        padding: 50px 7px;
+        margin: 30px;
+       
+    } 
+    nav > ul > li > a{
+        padding: 5px 15px;
+    
+    } 
+    nav > ul > li:hover a{
+        padding: 0px 85px 0px 85px;
+        
+        }  
+}
+@media screen and (max-width: 316px){
+    .logo-resp{
+        position: relative;
+        display: initial;
+      margin-left: 30%;
+        text-align: center;
+        padding: 40px 5px;
+        margin: 20px;
+       
+    } 
+    nav > ul > li > a{
+        padding: 5px 15px;
+    
+    } 
+    nav > ul > li:hover a{
+        padding: 0px 85px 0px 85px;
+        
+        }  
+}
+@media screen and (max-width: 300px){
+    .logo-resp{
+        position: relative;
+        display: initial;
+      margin-left: 30%;
+        text-align: center;
+        padding: 30px 5px;
+        margin: 10px;
+       
+    } 
+    nav > ul > li > a{
+        padding: 5px 15px;
+    
+    } 
+    nav > ul > li:hover a{
+        padding: 0px 85px 0px 85px;
+        
+        }  
+}
+@media screen and (max-width: 282px){
+    .logo-resp{
+        position: relative;
+        display: initial;
+      margin-left: 30%;
+        text-align: center;
+        padding: 20px 5px;
+        margin: 5px;
+       
+    } 
+    nav > ul > li > a{
+        padding: 5px 15px;
+    
+    } 
+    nav > ul > li:hover a{
+        padding: 0px 85px 0px 85px;
+        
+        }  
+}
