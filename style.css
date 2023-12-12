@@ -4,6 +4,7 @@ body,html {
     padding: 0;
     box-sizing: border-box; 
   z-index: 3;
+  color: #e44d26; 
 }
  /* Logo */
 
@@ -268,21 +269,18 @@ form > div {
 
 /*fin de l'Onglet formulaire de contact*/
 
-
-
 /* Onglet footer */
 
 footer{ 
     padding: 0 15px;
     color: #fff;
-    background-color: #011c39;   
+    background-color: #011c39; 
 }  
 .container-footer{
 position: relative;
 text-align: right;
 
    }
-
    .footer-text{
        margin-bottom: 0;
        padding-bottom: 10px;
